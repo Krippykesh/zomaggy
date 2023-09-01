@@ -10,13 +10,12 @@ function MealItem({
   affordability,
 }) {
   const navigation = useNavigation();
-
-  function selectMealItemHandler() {
+  function selectMealItemHandler(){
     navigation.navigate("MealDetail", {
       mealId: id,
     });
   }
-
+ 
   return (
     <View style={styles.mealItem}>
       <Pressable
